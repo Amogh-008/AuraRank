@@ -1,0 +1,18 @@
+team_name: "CTRL C CTRL V"
+primary_contact_name: "AMOGH GAUR"
+primary_contact_email: "amoghgaur2004@gmail.com"
+github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
+sandbox_link: "TO_BE_ADDED"
+
+ai_tools_declared:
+  - Claude
+
+compute_environment: "Windows 11, Python 3.11,git config --global user.email "your_github_email@gmail.com" 16GB RAM, CPU only"
+
+methodology_summary: >
+  Multi-signal ranking system scoring candidates across 5 dimensions:
+  skills match (30%), career quality (25%), role fit (20%), behavioral
+  signals (15%), and location (10%). Uses keyword + proficiency-weighted
+  skill scoring, honeypot detection via timeline/title contradiction
+  checks, and behavioral signal analysis from platform activity.
+  No GPU, no API calls. Full 100K run completes in under 5 minutes.
