@@ -2,13 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import {
-  Users,
-  Trophy,
-  Target,
-  ShieldAlert,
-  Sparkles,
-  ArrowUpRight,
-} from "lucide-react";
+    Users,
+    Trophy,
+    Target,
+    ShieldAlert,
+    Sparkles,
+    ArrowUpRight,
+  } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { StatCard } from "@/components/StatCard";

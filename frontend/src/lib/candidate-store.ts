@@ -4,7 +4,15 @@ const KEY = "ranked_response_v2";
 
 export function saveRankedResponse(data: unknown) {
   try {
-    sessionStorage.setItem(KEY, JSON.stringify(data));
+    const trimmed = {
+        ...data,
+        results: (data as any).results.slice(0, 1000),
+        };
+
+    sessionStorage.setItem(
+        KEY,
+        JSON.stringify(trimmed)
+        );
   } catch (e) {
     console.error("Failed to persist ranked data", e);
   }

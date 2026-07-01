@@ -6,6 +6,19 @@ import { renderErrorPage } from "./lib/error-page";
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
 };
+// Add this function wherever your API calls live
+export const rankFullDataset = async (jobDescription: string) => {
+  const formData = new FormData();
+  formData.append("job_description", jobDescription);
+
+  const response = await fetch("http://localhost:8000/rank-full", {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!response.ok) throw new Error("Ranking failed");
+  return response.json();
+};
 
 let serverEntryPromise: Promise<ServerEntry> | undefined;
 
