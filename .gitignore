@@ -1,0 +1,12 @@
+# Python
+**/__pycache__/
+*.pyc
+
+# Large datasets
+backend/data/*.jsonl
+
+# Node
+**/node_modules/
+
+# Environment
+.env
